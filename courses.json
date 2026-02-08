@@ -1,0 +1,26 @@
+{
+  "metadata": {
+    "lastUpdated": "February 2026",
+    "contactEmail": "david.vavinggren@it.uu.se"
+  },
+  "courses": [
+    {
+      "year": 2026,
+      "semester": "Spring",
+      "code": "ML-101",
+      "title": "Statistical Learning Theory",
+      "url": "https://example.com",
+      "description": "Generalization bounds and Rademacher complexity."
+    },
+
+    {
+    "year": 2026,
+    "semester": "Fall",
+    "code": "AI-303",
+    "title": "Robust Optimization",
+    "description": "Minimax objectives and adversarial robustness (Link coming soon)."
+    }
+  ]
+}
+
+
