@@ -2,10 +2,10 @@
 
 Course log for SysCon PhD students.
 
-To run locally, run 
+To run locally, clone the repo and run 
 
-python3 -m http.server 8000
+`python3 -m http.server 8000`
 
-and then visit 
+to start hosting. Then visit
 
-http://localhost:8000
+`http://localhost:8000`.
