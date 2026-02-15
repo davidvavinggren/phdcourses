@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Course & School Log | SysCon</title>
+    <title>SysCon Course Log </title>
     <style>
         :root {
             --uu-red: #990000;
@@ -74,7 +74,7 @@
 
         async function renderData(type) {
             try {
-                const response = await fetch(`${type}.json`);
+                const response = await fetch(`${type}.json?t=${new Date().getTime()}`);
                 const data = await response.json();
                 
                 const items = data[type];
@@ -115,8 +115,11 @@
                         ${groups[semesterKey].map(i => `
                             <div class="item-card">
                                 <div>
-                                    <span class="item-code">${i.code}</span>
-                                    ${i.url ? `<a href="${i.url}" class="item-title" target="_blank">${i.title}</a>` : `<span class="item-title">${i.title}</span>`}
+                                    ${i.code ? `<span class="item-code">${i.code}</span>` : ''}
+                                    ${i.url 
+                                        ? `<a href="${i.url}" class="item-title" target="_blank">${i.title}</a>` 
+                                        : `<span class="item-title">${i.title}</span>`
+                                    }
                                 </div>
                                 <span class="description">${i.description}</span>
                             </div>
